@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="container">
+        <header class="main-headeer">
+            <h1 id="title">freeCodeCamp Survey Form</h1>
+                <p id="description">
+                    Thank you for taking the time to help us improve the platform
+                </p>
+        </header>
+
+        <form action="" id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="age" id="number-label">Age <span>(optional)</span></label>
+                <input type="number" name="age" id="number" placeholder="Age" min="1" max="100">
+            </div>
+            <div class="form-group">
+                <label for="dropdown-selector-role">Which option best describes your current role?</label>
+                <select name="dropdown-selector-role" id="dropdown">
+                    <option value="">Select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Job">Full Time Job</option>
+                    <option value="Learner">Full Time Learner</option>
+                    <option value="Preferno">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p for="radio-selector">Would you recommend freeCodeCamp to a friend?</p>
+                <input type="radio" name="radio-selector" id="definitely" value="definitely">
+                <label for="definitely">Definitely</label> 
+                <input type="radio" name="radio-selector" id="maybe" value="maybe">
+                <label for="maybe">Maybe</label> 
+                <input type="radio" name="radio-selector" id="not-sure" value="not-sure">
+                <label for="not-sure">Not sure</label> 
+                
+            </div>
+            <div class="form-group">
+                <label for="favorite-selector">What is your favorite feature of freeCodeCamp?</label>
+                <select name="favorite-selector" id="favorite-selector">
+                    <option value="">Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="openSource">Open Source</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="improved-selector">What would you like to see improved? <span>(Check all that apply)</span></label>
+                <input type="checkbox" name="" id="" value="Front-end Projects">Front-end Projects <br>
+                <input type="checkbox" name="" id="" value="Back-end Projects">Back-end Projects <br>
+                <input type="checkbox" name="" id="Data Visualization" value="Data Visualization">Data Visualization <br>
+                <input type="checkbox" name="" id="Challenges" value="Challenges>Challenges <br>
+                <input type="checkbox" name="" id="" value="Open Source Community">Open Source Community <br>
+                <input type="checkbox" name="" id="" value="Gitter help rooms">Gitter help rooms <br>
+                <input type="checkbox" name="" id="" value="Videos">Videos <br>
+                <input type="checkbox" name="" id="" value="City Meetups">City Meetups <br>
+                <input type="checkbox" name="" id="" value="Wiki"> Wiki <br>
+                <input type="checkbox" name="" id="" value="Forum">Forum <br>
+                <input type="checkbox" name="" id="" value="Additional Courses">Additional Courses <br>
+            </div>
+            <div class="form-group">
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea name="comments" id="comments" placeholder="Enter your commnet here" ></textarea>
+             
+            </div>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+        <p id="creator"> This Form Created By <a href="http://www.youtube.com/c/NatureBD360Degree" target="_blank"> Alimul Alam</a></p>
+    </div>
 </body>
 </html>
